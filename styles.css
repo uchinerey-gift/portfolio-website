@@ -44,3 +44,16 @@ footer {
 header h1 {
     margin-bottom: 0.25rem;
 }
+nav {
+    margin: 0.5rem 1.5rem;
+}
+
+nav a {
+    margin-right: 1rem;
+    text-decoration: none;
+    color: #0077cc;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
