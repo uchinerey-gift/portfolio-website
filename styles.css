@@ -23,3 +23,15 @@ body {
     left: 0.75rem;
     top: 0.75rem;
 }
+section {
+    padding: 2rem 1rem;
+}
+
+h1,
+h2 {
+    font-weight: 700;
+}
+
+p {
+    max-width: 60ch;
+}
