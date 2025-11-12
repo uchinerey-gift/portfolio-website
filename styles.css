@@ -35,3 +35,12 @@ h2 {
 p {
     max-width: 60ch;
 }
+header,
+footer {
+    background-color: #f8f9fa;
+    padding: 1rem 1.5rem;
+}
+
+header h1 {
+    margin-bottom: 0.25rem;
+}
