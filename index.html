@@ -24,63 +24,55 @@
         <a href="#contact">Contact</a>
     </nav>
     <main id="main-content">
-
         <section id="about">
             <h2>About</h2>
-            <p>
-                Arizona-based technologist with a background in healthcare management, where I gained hands-on experience in
-                access control, data security, and HIPAA compliance. I'm now combining that foundation with cybersecurity and
-                web development to build secure, human-centered technology through problem-solving and collaboration.
+            <p>Arizona-based technologist transitioning from healthcare operations into cybersecurity and web development.
             </p>
         </section>
+    
+        <!-- Contact Section (must be INSIDE main) -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <p><strong>Email:</strong> <a href="mailto:uchinerey@gmail.com">uchinerey@gmail.com</a></p>
+            <p><strong>LinkedIn:</strong>
+                <a href="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3Be9DEyqh9TfO8uVhawxyRxQ%3D%3D"
+                    target="_blank" rel="noopener">linkedin.com/in/chinereyukwuprofessional</a>
+            </p>
+            <p><strong>Address:</strong> Arizona, US</p>
+    
+            <!-- Contact Form -->
+            <form id="contact-form" aria-describedby="form-help">
+                <div>
+                    <label for="name">Name <span aria-hidden="true">*</span></label><br>
+                    <input id="name" name="name" type="text" required>
+                </div>
+                <div>
+                    <label for="email">Email <span aria-hidden="true">*</span></label><br>
+                    <input id="email" name="email" type="email" required>
+                </div>
+                <div>
+                    <label for="phone">LinkedIn (optional)</label><br>
+                    <input id="phone" name="phone" type="url"
+                        value="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3Be9DEyqh9TfO8uVhawxyRxQ%3D%3D">
+                </div>
+                <div>
+                    <label for="address">Address (optional)</label><br>
+                    <input id="address" name="address" type="text" value="Arizona, US">
+                </div>
+                <button type="submit">Send</button>
+                <p id="form-msg" role="status" aria-live="polite"></p>
+                <small id="form-help">Fields marked * are required.</small>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <small>&copy; <span id="year"></span> Chinerey Ukwu</small>
+    </footer>
+    </body>
+    
+    </html>
 
-    </main>
-    <!-- Contact Section -->
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>
-            <strong>Email:</strong>
-            <a href="mailto:uchinerey@gmail.com">uchinerey@gmail.com</a>
-        </p>
-        <p>
-            <strong>LinkedIn:</strong>
-            <a href="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3Be9DEyqh9TfO8uVhawxyRxQ%3D%3D"
-                target="_blank" rel="noopener">
-                linkedin.com/in/chinereyukwuprofessional
-            </a>
-        </p>
-        <p><strong>Address:</strong> Arizona, US</p>
-    
-        <!-- Contact Form -->
-        <form id="contact-form" aria-describedby="form-help">
-            <div>
-                <label for="name">Name <span aria-hidden="true">*</span></label><br>
-                <input id="name" name="name" type="text" required>
-            </div>
-    
-            <div>
-                <label for="email">Email <span aria-hidden="true">*</span></label><br>
-                <input id="email" name="email" type="email" required>
-            </div>
-    
-            <div>
-                <label for="phone">LinkedIn (optional)</label><br>
-                <input id="phone" name="phone" type="url"
-                    value="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3Be9DEyqh9TfO8uVhawxyRxQ%3D%3D">
-            </div>
-    
-            <div>
-                <label for="address">Address (optional)</label><br>
-                <input id="address" name="address" type="text" value="Arizona, US">
-            </div>
-    
-            <button type="submit">Send</button>
-            <p id="form-msg" role="status" aria-live="polite"></p>
-            <small id="form-help">Fields marked * are required.</small>
-        </form>
-    </section>
-    </main>
+
 
 
 
