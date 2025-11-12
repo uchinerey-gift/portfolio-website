@@ -1,6 +1,10 @@
 body {
     font-family: system-ui, -apple-system, Arial, sans-serif;
     line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #222;
 }
 
 /* Accessibility: show skip link when keyboard navigation focuses it */
