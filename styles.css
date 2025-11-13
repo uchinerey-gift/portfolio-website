@@ -57,3 +57,17 @@ nav a {
 nav a:hover {
     text-decoration: underline;
 }
+/* Medium screens (tablets, ≥768px) */
+@media (min-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+
+    section {
+        padding: 2.5rem 2rem;
+    }
+
+    nav {
+        margin: 1rem 2rem;
+    }
+}
