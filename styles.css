@@ -70,6 +70,40 @@ nav a:hover {
     padding: 1.5rem;
     border-radius: 8px;
     background-color: #ffffff;
+}/* === Hero Pattern Styles === */
+.hero {
+    background-image: url("./images/arizona-hero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    padding: 3rem 1.5rem;
+    text-align: left;
+    position: relative;
+}
+
+/* Subtle dark overlay so text is readable */
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+}
+
+.hero-inner {
+    position: relative;
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+.hero-title {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero-tagline {
+    font-size: 1rem;
+    max-width: 45rem;
 }
 /* Medium screens (tablets, ≥768px) */
 @media (min-width: 768px) {
