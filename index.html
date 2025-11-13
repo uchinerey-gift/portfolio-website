@@ -50,30 +50,43 @@
             
             <p><strong>Address:</strong> Arizona, US</p>
 
-
+            
             <!-- Contact Form -->
-            <form id="contact-form" aria-describedby="form-help">
-                <div>
-                    <label for="name">Name <span aria-hidden="true">*</span></label><br>
-                    <input id="name" name="name" type="text" required>
-                </div>
-                <div>
-                    <label for="email">Email <span aria-hidden="true">*</span></label><br>
-                    <input id="email" name="email" type="email" required>
-                </div>
-                <div>
-                    <label for="phone">LinkedIn (optional)</label><br>
-                    <input id="phone" name="phone" type="url"
-                        value="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3Be9DEyqh9TfO8uVhawxyRxQ%3D%3D">
-                </div>
-                <div>
-                    <label for="address">Address (optional)</label><br>
-                    <input id="address" name="address" type="text" value="Arizona, US">
-                </div>
-                <button type="submit">Send</button>
-                <p id="form-msg" role="status" aria-live="polite"></p>
-                <small id="form-help">Fields marked * are required.</small>
-            </form>
+        <form id="contact-form" aria-describedby="form-help">
+        
+            <div>
+                <label for="name">Name <span aria-hidden="true">*</span></label><br>
+                <input id="name" name="name" type="text" required>
+            </div>
+        
+            <div>
+                <label for="email">Email <span aria-hidden="true">*</span></label><br>
+                <input id="email" name="email" type="email" required>
+            </div>
+        
+            <div>
+                <label for="phone">Phone (optional)</label><br>
+                <input id="phone" name="phone" type="tel" placeholder="(555) 555-5555">
+            </div>
+        
+            <div>
+                <label for="address">Address (optional)</label><br>
+                <input id="address" name="address" type="text">
+            </div>
+        
+            <div>
+                <label for="linkedin">LinkedIn (optional)</label><br>
+                <input id="linkedin" name="linkedin" type="url"
+                    value="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3Be9DEyqh9TfO8uVhawxyRxQ%3D%3D">
+            </div>
+        
+            <button type="submit">Send</button>
+        
+            <p id="form-msg" role="status" aria-live="polite"></p>
+            <small id="form-help">Fields marked * are required.</small>
+        
+        </form>
+
         </section>
     </main>
     <footer>
