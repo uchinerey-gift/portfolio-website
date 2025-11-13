@@ -71,3 +71,19 @@ nav a:hover {
         margin: 1rem 2rem;
     }
 }
+/* Wide screens (desktops, ≥1024px) */
+@media (min-width: 1024px) {
+
+    main,
+    header,
+    footer,
+    nav {
+        max-width: 1100px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    section {
+        padding: 3rem 2rem;
+    }
+}
