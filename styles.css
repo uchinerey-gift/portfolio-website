@@ -76,7 +76,7 @@ nav a:hover {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    color: #ffffff;
+    color: #000000;
     padding: 3rem 1.5rem;
     text-align: left;
     position: relative;
@@ -87,7 +87,7 @@ nav a:hover {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.35);
+    background: rgba(0, 0, 0, 0.25);
 }
 
 .hero-inner {
@@ -104,6 +104,7 @@ nav a:hover {
 .hero-tagline {
     font-size: 1rem;
     max-width: 45rem;
+    color: #000000;
 }
 /* Medium screens (tablets, ≥768px) */
 @media (min-width: 768px) {
@@ -134,4 +135,9 @@ nav a:hover {
     section {
         padding: 3rem 2rem;
     }
+}
+
+.hero-title,
+.hero-tagline {
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.6);
 }
