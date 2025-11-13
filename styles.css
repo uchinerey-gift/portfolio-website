@@ -34,6 +34,12 @@ h2 {
 
 p {
     max-width: 60ch;
+    color: #222;
+}
+/* Override: make About paragraph stand out slightly */
+p.about-highlight {
+    color: #004c99;
+    /* overrides base paragraph color */
 }
 header,
 footer {
