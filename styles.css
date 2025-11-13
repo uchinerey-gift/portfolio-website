@@ -57,6 +57,13 @@ nav a {
 nav a:hover {
     text-decoration: underline;
 }
+/* Contact form styling with border */
+#contact-form {
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
 /* Medium screens (tablets, ≥768px) */
 @media (min-width: 768px) {
     body {
