@@ -87,6 +87,8 @@ nav a:hover {
     content: "";
     position: absolute;
     inset: 0;
+
+
     background: rgba(0, 0, 0, 0.25);
 }
 
@@ -105,6 +107,55 @@ nav a:hover {
     font-size: 1rem;
     max-width: 45rem;
     color: #000000;
+}/* === Card Pattern Styles (Experience Section) === */
+.card-grid {
+    display: grid;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.card {
+    background-color: #fff7ec;
+    /* soft warm cream */
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+    border: 1px solid #f1e3d2;
+}
+
+.card h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+}
+
+/* Arizona accent colors */
+.card-helpdesk {
+    border-top: 4px solid #ff8a4a;
+    /* desert coral */
+}
+
+.card-cyber {
+    border-top: 4px solid #e0b400;
+    /* muted gold */
+}
+
+.card-webdev {
+    border-top: 4px solid #008b8b;
+    /* deep teal */
+}
+
+.card ul {
+    padding-left: 1.25rem;
+    margin: 0;
+}
+
+.card li {
+    margin-bottom: 0.35rem;
 }
 /* Medium screens (tablets, ≥768px) */
 @media (min-width: 768px) {
@@ -119,6 +170,10 @@ nav a:hover {
     nav {
         margin: 1rem 2rem;
     }
+        .card-grid {     /* Bigger Screen */
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
 }
 /* Wide screens (desktops, ≥1024px) */
 @media (min-width: 1024px) {
@@ -134,6 +189,10 @@ nav a:hover {
 
     section {
         padding: 3rem 2rem;
+    }
+
+    .card-grid {    /* Bigger Screen */
+        grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 }
 
