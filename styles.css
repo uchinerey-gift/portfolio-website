@@ -157,6 +157,35 @@ nav a:hover {
 .card li {
     margin-bottom: 0.35rem;
 }
+/* === About Section Media-Object Pattern === */
+.about-section {
+    padding-top: 2.5rem;
+}
+
+.about-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.about-photo-wrapper {
+    margin: 0;
+}
+
+.about-photo {
+    width: 180px;
+    height: auto;
+    border-radius: 999px;
+    border: 3px solid #ff8a4a;
+    /* desert coral accent */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.10);
+    object-fit: cover;
+}
+
+.about-text {
+    max-width: 60ch;
+}
 /* Medium screens (tablets, ≥768px) */
 @media (min-width: 768px) {
     body {
