@@ -138,16 +138,15 @@
 
             
             <!-- Contact Form -->
-        <form id="contact-form" aria-describedby="form-help">
-        
+        <form id="contact-form" aria-describedby="form-help" aria-label="Contact form to reach Chinerey Ukwu">
             <div>
                 <label for="name">Name <span aria-hidden="true">*</span></label><br>
-                <input id="name" name="name" type="text" required>
+                <input id="name" name="name" type="text" required aria-required="true">
             </div>
         
             <div>
                 <label for="email">Email <span aria-hidden="true">*</span></label><br>
-                <input id="email" name="email" type="email" required>
+                <input id="email" name="email" type="email" required aria-required="true">
             </div>
         
             <div>
@@ -170,14 +169,14 @@
         
             <p id="form-msg" role="status" aria-live="polite"></p>
             <small id="form-help">Fields marked * are required.</small>
-        
-        </form>
+         </form>
 
         </section>
     </main>
-    <footer>
+    <footer role="contentinfo">
         <small>&copy; <span id="year"></span> Chinerey Ukwu</small>
     </footer>
+
     </body>
     
     </html>
