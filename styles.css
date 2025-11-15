@@ -202,6 +202,15 @@ nav a:hover {
         .card-grid {     /* Bigger Screen */
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
+        /* About Section Layout Adjustment */
+        .about-layout {
+            flex-direction: row;
+            align-items: center;
+        }
+    
+        .about-photo {
+            width: 220px;
+        }
 
 }
 /* Wide screens (desktops, ≥1024px) */
