@@ -1,3 +1,4 @@
+/* Base layout */
 body {
     font-family: system-ui, -apple-system, Arial, sans-serif;
     line-height: 1.6;
@@ -8,7 +9,7 @@ body {
     color: #222;
 }
 
-/* Accessibility: show skip link when keyboard navigation focuses it */
+/* Skip link for accessibility */
 .skip-link {
     position: absolute;
     left: -9999px;
@@ -25,6 +26,7 @@ body {
     top: 0.75rem;
 }
 
+/* Sections, headings, text */
 section {
     padding: 2rem 1rem;
 }
@@ -39,7 +41,7 @@ p {
     color: #222;
 }
 
-/* Override: make About paragraph stand out slightly */
+/* Make About paragraph stand out */
 p.about-highlight {
     color: #004c99;
     /* overrides base paragraph color */
@@ -192,7 +194,8 @@ nav a:hover {
     height: auto;
     border-radius: 999px;
     border: 3px solid #ff8a4a;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.10);
+    /* desert coral accent */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     object-fit: cover;
 }
 
@@ -201,15 +204,24 @@ nav a:hover {
 }
 
 /* === Footer Social Icons === */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+}
+
 .social-icons {
     display: flex;
-    gap: 1rem;
+    gap: 1.25rem;
     margin-top: 1rem;
     justify-content: center;
+    align-items: center;
 }
 
 .social-icons a {
-    font-size: 1.5rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: 1.1rem;
     color: #ff8a4a;
     /* desert coral */
     text-decoration: none;
@@ -219,19 +231,66 @@ nav a:hover {
 .social-icons a:hover {
     color: #008b8b;
     /* deep teal */
-    transform: scale(1.15);
+    transform: scale(1.08);
 }
 
-footer {
-    text-align: center;
-    padding: 1.5rem;
+.social-icons i {
+    font-size: 1.4rem;
+}
+
+/* Screen-reader-only helper (if you want later) */
+/*
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+*/
+
+/* === Fade-in animation for sections === */
+@keyframes fade-in-up {
+    from {
+        opacity: 0;
+        transform: translateY(16px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    opacity: 0;
+    animation: fade-in-up 0.7s ease-out forwards;
+}
+
+/* Staggered delays */
+.fade-delay-1 {
+    animation-delay: 0.1s;
+}
+
+.fade-delay-2 {
+    animation-delay: 0.25s;
+}
+
+.fade-delay-3 {
+    animation-delay: 0.4s;
+}
+
+.fade-delay-4 {
+    animation-delay: 0.55s;
 }
 
 /* === MEDIA QUERIES === */
 
 /* Medium screens (tablets, ≥768px) */
 @media (min-width: 768px) {
-
     body {
         font-size: 18px;
     }
@@ -278,6 +337,6 @@ footer {
     .card-grid {
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }
-
     
+
 }
