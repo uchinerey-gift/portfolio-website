@@ -238,19 +238,7 @@ footer {
     font-size: 1.4rem;
 }
 
-/* Screen-reader-only helper (if you want later) */
-/*
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
-}
-*/
+
 
 /* === Fade-in animation for sections === */
 @keyframes fade-in-up {
@@ -337,6 +325,6 @@ footer {
     .card-grid {
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }
-    
+
 
 }
