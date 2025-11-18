@@ -203,6 +203,32 @@ nav a:hover {
     max-width: 60ch;
 }
 
+/* === Typewriter + fade quote under About === */
+.about-quote {
+    margin-top: 0.75rem;
+    font-style: italic;
+    color: #004c99;
+    /* same family as your highlight */
+    min-height: 1.5em;
+    /* keeps the line from jumping */
+    opacity: 0;
+    /* start hidden */
+    transition: opacity 0.6s ease-in-out;
+}
+
+.about-quote.visible {
+    opacity: 1;
+}
+
+/* Typewriter cursor effect on the span */
+.typewriter span {
+    border-right: 2px solid #ff8a4a;
+    /* little cursor in desert coral */
+    padding-right: 2px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
 /* === Footer Social Icons === */
 footer {
     text-align: center;
