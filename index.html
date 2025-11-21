@@ -1,78 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- ========= HEAD SECTION ========= -->
+
 <head>
-    <meta charset="UTF-8" />
-
-    <!-- Required for mobile responsiveness -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <!-- Page Title -->
+     <meta charset="UTF-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Chinerey Ukwu | Portfolio</title>
 
-    <!-- Description for SEO -->
-    <meta name="description" content="Portfolio of Chinerey Ukwu — Help Desk, Cybersecurity, and Web Development." />
+    <!-- Meta Description -->
+    <meta name="description" content="Portfolio of Chinerey Ukwu — Help Desk, Cybersecurity, and Web Development.">
 
-    <!-- Open Graph SEO -->
+    <!-- Open Graph (SEO for social preview) -->
     <meta property="og:title" content="Chinerey Ukwu | Help Desk, Cybersecurity & Web Development" />
     <meta property="og:description"
-        content="Arizona-based technologist with healthcare experience transitioning into cybersecurity and IT." />
+        content="Arizona-based technologist transitioning from healthcare operations into cybersecurity and web development." />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://uchinerey-gift.github.io/portfolio-website/images/gloria.jpg" />
+    <meta property="og:url" content="https://uchinerey-gift.github.io/portfolio-website/" />
+    <meta property="og:image"
+        content="https://uchinerey-gift.github.io/portfolio-website/images/Gloria-Ukwu-2025-H2-Right.jpg" />
 
-    <!-- Twitter Card SEO -->
+    <!-- Twitter SEO -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Chinerey Ukwu | Help Desk, Cybersecurity & Web Development" />
     <meta name="twitter:description"
-        content="Arizona-based technologist with a strong healthcare background, growing in cybersecurity and IT." />
-    <meta name="twitter:image" content="https://uchinerey-gift.github.io/portfolio-website/images/gloria.jpg" />
+        content="Arizona-based technologist with a strong healthcare background, growing in cybersecurity, IT, and web development." />
+    <meta name="twitter:image"
+        content="https://uchinerey-gift.github.io/portfolio-website/images/Gloria-Ukwu-2025-H2-Right.jpg" />
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        crossorigin="anonymous" />
+
+    <!-- Your Styles -->
+    <link rel="stylesheet" href="./styles.css" />
 
     <!-- Google Analytics Placeholder -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-XXXXXXXXXX');
+        gtag("js", new Date());
+        gtag("config", "G-XXXXXXXXXX");
     </script>
+ </head>
 
-    <!-- Google Fonts (Inter + Poppins) -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap"
-        rel="stylesheet">
-
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-    <!-- Custom Styles -->
-    <link rel="stylesheet" href="./styles.css">
-
-</head>
+<!-- ========= BODY SECTION ========= -->
 
 <body id="top">
 
-    <!-- Skip Link -->
-    <a class="skip-link" href="#main-content">Skip to main content</a>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
-    <!-- HERO HEADER -->
+    <!-- ========= HERO HEADER ========= -->
     <header class="hero">
         <div class="hero-inner">
             <h1 class="hero-title">Chinerey Ukwu</h1>
             <p class="hero-tagline">
-                Arizona-based technologist transitioning from healthcare ops into cybersecurity & web development.
+                Arizona based technologist transitioning from healthcare ops into cybersecurity & web development.
             </p>
         </div>
     </header>
 
-    <!-- NAVIGATION -->
+    <!-- ========= NAVIGATION ========= -->
     <nav aria-label="Primary navigation">
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
         <a href="#contact">Contact</a>
     </nav>
 
+    <!-- ========= MAIN CONTENT ========= -->
     <main id="main-content">
 
-        <!-- ABOUT SECTION -->
+        <!-- ===== ABOUT ===== -->
         <section id="about" class="about-section" aria-labelledby="about-heading">
             <h2 id="about-heading">About</h2>
 
@@ -85,15 +89,16 @@
 
                 <div class="about-text">
                     <p class="about-highlight">
-                        Arizona-based technologist with a strong foundation in healthcare operations, now transitioning
+                        Arizona based technologist with a strong foundation in healthcare operations, now transitioning
                         into cybersecurity and web development. Driven by problem-solving, committed to continuous
-                        learning, and dedicated to delivering secure, user-focused solutions.
+                        learning, and dedicated to delivering secure, user-focused solutions while growing within the
+                        tech industry.
                     </p>
                 </div>
             </div>
         </section>
 
-        <!-- EXPERIENCE -->
+        <!-- ===== EXPERIENCE ===== -->
         <section id="experience" aria-labelledby="experience-heading">
             <h2 id="experience-heading">Experience & Focus Areas</h2>
 
@@ -124,29 +129,45 @@
                     <p>Building real projects and continuously growing as a developer.</p>
                     <ul>
                         <li>Techtonica portfolio & recipe page projects</li>
-                        <li>HTML, CSS, JavaScript fundamentals</li>
-                        <li>Git/GitHub workflow</li>
+                        <li>HTML, CSS, and JavaScript fundamentals</li>
+                        <li>Pair programming & Git/GitHub workflow</li>
                     </ul>
                 </article>
 
             </div>
         </section>
 
-        <!-- CONTACT SECTION -->
+        <!-- ===== CONTACT FORM ===== -->
         <section id="contact" aria-labelledby="contact-heading">
             <h2 id="contact-heading">Contact</h2>
 
-            <!-- REQUIRED FORM from TEACHER -->
-            <form id="contact-form">
+            <p><strong>Email:</strong> <a href="mailto:uchinerey@gmail.com">uchinerey@gmail.com</a></p>
 
+            <p><strong>LinkedIn:</strong>
+                <a href="https://www.linkedin.com/in/chinereyukwuprofessional" target="_blank" rel="noopener">
+                    linkedin.com/in/chinereyukwuprofessional
+                </a>
+            </p>
+
+            <p><strong>GitHub:</strong>
+                <a href="https://github.com/uchinerey-gift" target="_blank" rel="noopener">
+                    github.com/uchinerey-gift
+                </a>
+            </p>
+
+            <p><strong>Phone:</strong> 520-487-5880</p>
+            <p><strong>Location:</strong> Arizona, USA</p>
+
+            <!-- ---- CONTACT FORM ---- -->
+            <form id="contact-form" aria-describedby="form-help">
                 <div>
                     <label for="name">Name <span aria-hidden="true">*</span></label><br>
-                    <input id="name" name="name" type="text" required>
+                    <input id="name" name="name" type="text" required aria-required="true">
                 </div>
 
                 <div>
                     <label for="email">Email <span aria-hidden="true">*</span></label><br>
-                    <input id="email" name="email" type="email" required>
+                    <input id="email" name="email" type="email" required aria-required="true">
                 </div>
 
                 <div>
@@ -161,40 +182,29 @@
 
                 <button type="submit">Send</button>
 
+                <small id="form-help">Fields marked * are required.</small>
             </form>
+        </section> <!-- Section ends here -->
 
-            <!-- Contact Info List -->
-            <p><strong>Email:</strong> <a href="mailto:uchinerey@gmail.com">uchinerey@gmail.com</a></p>
-            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/chinereyukwuprofessional" target="_blank"
-                    rel="noopener">linkedin.com/in/chinereyukwuprofessional</a></p>
-            <p><strong>GitHub:</strong> <a href="https://github.com/uchinerey-gift" target="_blank"
-                    rel="noopener">github.com/uchinerey-gift</a></p>
-            <p><strong>Phone:</strong> 520-487-5880</p>
-            <p><strong>Location:</strong> Arizona, USA</p>
+    </main> <!-- Main ends here, after all sections -->
 
-        </section>
-
-    </main>
-
-    <!-- FOOTER -->
-    <footer>
-        <small>&copy; <span id="year"></span> Chinerey Ukwu</small>
+    <!-- ========= FOOTER ========= -->
+    <footer role="contentinfo">
+        <small>&copy; 2025 Chinerey Ukwu</small>
 
         <div class="social-icons">
+            <!-- Added accessibility attributes and completed the links -->
             <a href="https://github.com/uchinerey-gift" target="_blank" rel="noopener" aria-label="GitHub profile link">
                 <i class="fab fa-github" aria-hidden="true"></i>
             </a>
-        
-            <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter profile link">
+             <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter profile link">
                 <i class="fab fa-twitter" aria-hidden="true"></i>
             </a>
-        
-            <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook profile link">
+             <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook profile link">
                 <i class="fab fa-facebook" aria-hidden="true"></i>
             </a>
         </div>
-
-    </footer>
+     </footer>
 
 </body>
 
